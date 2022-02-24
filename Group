@@ -1,0 +1,6 @@
+package desktopitem;
+
+public interface Group
+{
+	public void add(String item);
+}
