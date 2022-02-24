@@ -1,0 +1,27 @@
+package desktopitem;
+
+public class desktopitem
+{
+	private String Name;
+
+	public desktopitem(String Name)
+	{
+		this.Name = Name;
+	}
+
+	public String getName()
+	{
+		return Name;
+	}
+
+	public void open()
+	{
+		System.out.println("open file"+Name);
+	}
+
+	public void rename(String Name)
+	{
+		this.Name = Name;
+	}
+
+}
