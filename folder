@@ -1,0 +1,31 @@
+package desktopitem;
+
+public abstract class Folder extends desktopitem implements Group
+{
+
+
+	public Folder(String Name)
+	{
+		super(Name);
+	}
+
+	private int Size;
+	private String Name;
+
+
+	public void Folder(String Name)
+	{
+	this.Name = Name;
+	}
+
+	public int getSize() {
+	
+	return Size;
+	}
+
+	public void open() 
+	{
+		System.out.println("open file"+Name);
+	}
+
+}
