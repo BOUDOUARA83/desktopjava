@@ -1,0 +1,30 @@
+package desktopitem;
+
+public class TextFile extends desktopitem implements Group
+{
+	public TextFile(String Name)
+	{
+		super(Name);
+	
+	}
+
+	private String contents;
+	private String Name;
+	
+
+	public void TextFile(String Name)
+	{
+		this.Name = Name;
+	}
+	
+	public void add(String contents) 
+	{
+		this.contents = contents;
+	}
+
+	public void open() 
+	{
+		System.out.println("open file"+Name);
+	}
+
+}
